@@ -1,0 +1,52 @@
+
+<div *ngIf="criteriaListenedFromExternalComponent.criteria==''" class="wrapper">
+  <div class="titulo">
+    <h1 style="color: aliceblue;">Criteria no seleccionada</h1>
+  </div>
+</div>
+<div class="wrapper" *ngIf="loading">
+  <div  class="lds-dual-ring"></div>
+</div>
+  
+
+  <div *ngIf="criteriaListenedFromExternalComponent.criteria!='' && !loading">
+    <div>
+      <div class="titulo">
+        <h1 style="color: aliceblue;">{{criteriaListenedFromExternalComponent.criteria}}</h1>
+      </div>
+    </div> 
+    <hr>
+  </div>
+
+
+  <div *ngFor="let car of criteriaListenedFromExternalComponent.cars">
+    
+      <mat-card class="example-card">
+                  <mat-card-header>
+                    <mat-card-title-group>
+                      <mat-card-title>Modelo de auto: {{car.model}}</mat-card-title>
+                      <mat-card-subtitle>Clase: {{car.class}}</mat-card-subtitle>
+                      <img mat-card-sm-image src="https://png.pngtree.com/png-clipart/20190705/original/pngtree-vector-car-icon-png-image_4295797.jpg">
+                    </mat-card-title-group>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>Año:{{car.year}}</p>
+                    <p>Tipo de combusitble:{{car.fuel_type}}</p>
+                    <p>marca:{{car.make}}</p>
+                    <p>numero de cilindros:{{car.cylinders}}</p>
+                    <p>clase:{{car.class}}</p>
+                    <p>tipo de Transmisión:{{car.transmission}}</p>
+                  </mat-card-content>
+                </mat-card>
+  </div>
+
+
+ 
+
+
+
+
+ 
+
+
+

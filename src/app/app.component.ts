@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProyectoFinal';
+  userLogin:boolean=false;
+  user: string="";
+
+  userInicioSesion(){
+    alert("se inicio sesion");
+
+  }
 }

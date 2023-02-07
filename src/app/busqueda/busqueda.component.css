@@ -1,0 +1,28 @@
+.wrapper{
+  display: block;
+  clear: none;
+  float: left;
+  width: 10%;
+  height: 100%;
+  margin-left: 1rem;
+}
+.envolturaResult{
+  display: block;
+  clear: none;
+  float: left;
+  width: 70%;
+  margin: 2rem 0 0 2rem;
+  height: 100%;
+}
+
+.texto {
+ 
+  text-align: center;
+}
+h1 {
+  color: #000;
+  font-weight: lighter;
+  text-align: center;
+}
+
+

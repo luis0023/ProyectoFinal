@@ -1,0 +1,19 @@
+
+/* Menu Navegacion */
+.spacer {
+    justify-content: space-between;
+  }
+   .example-spacer {
+    flex: 1 1 auto;
+  }
+  .example-icon {
+    padding: 0 15px;
+  }
+  
+
+  /* ICONOS */
+
+
+  .iconPerson{
+    margin-right: 20px;
+  }

@@ -1,0 +1,36 @@
+<div class="container" >
+    <div class="row justify-content-center pt-5 mt-5">
+        <div class="col-md-4 formulario">
+            <form (submit)="submit(postForm)" #postForm="ngForm">
+                <div class="row form-group text-center">
+                    <h1 class="">Iniciar sesión</h1>
+
+                </div>
+                <div class="row form-group mx-sm-4 mb-4">
+                    <input type="text" name="user" class="form-control"  ngModel placeholder="Ingrese su usuario" required #user="ngModel">
+                </div>
+                <div class="row form-group mx-sm-4">
+                    <input type="password" name="pass" class="form-control" ngModel placeholder="Ingrese Contraseña" required #pass="ngModel">
+                </div>  
+
+
+
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center m-4">
+
+                            <button type="submit" name="Registrar" class="btn btn-primary"> Ingresar</button>
+                        </div>
+
+                        
+                    </div>
+
+                
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+

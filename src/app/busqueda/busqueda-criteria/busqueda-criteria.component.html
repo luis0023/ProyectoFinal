@@ -1,0 +1,35 @@
+
+<button class="button " mat-button [matMenuTriggerFor]="filtro">Filtrar         </button>
+<mat-menu #filtro="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="transmision">Transmision</button>
+  <button mat-menu-item [matMenuTriggerFor]="tipoCombustible">Tipo de combustible</button>
+  <button mat-menu-item [matMenuTriggerFor]="numCilindros">Numero de cilindros</button>
+</mat-menu>
+
+<mat-menu #transmision="matMenu">
+  
+  <button mat-menu-item (click)="onCriteriaSelect(1)">Transmision automatica</button>
+  <button mat-menu-item  (click)="onCriteriaSelect(2)">Transmision manual</button>
+</mat-menu>
+
+<mat-menu #tipoCombustible="matMenu">
+  <button mat-menu-item (click)="onCriteriaSelect(3)"> gas</button>
+  <button mat-menu-item (click)="onCriteriaSelect(4)"> diesel</button>
+  <button mat-menu-item (click)="onCriteriaSelect(5)">electricidad</button>
+</mat-menu>
+<!-- // Numero de cilindros:2, 3 4, 5, 6, 8, 10, 12, 16. -->
+
+<mat-menu #numCilindros="matMenu">
+  <button mat-menu-item (click)="onCriteriaSelect(6)">2</button>
+  <button mat-menu-item (click)="onCriteriaSelect(7)">3</button>
+  <button mat-menu-item (click)="onCriteriaSelect(8)">4</button>
+  <button mat-menu-item (click)="onCriteriaSelect(9)">5</button>
+  <button mat-menu-item (click)="onCriteriaSelect(10)">6</button>
+  <button mat-menu-item (click)="onCriteriaSelect(11)">8</button>
+  <button mat-menu-item (click)="onCriteriaSelect(12)">10</button>
+  <button mat-menu-item (click)="onCriteriaSelect(13)">12</button>
+  <button mat-menu-item (click)="onCriteriaSelect(14)">16</button>
+</mat-menu>
+
+
+

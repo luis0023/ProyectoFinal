@@ -1,0 +1,9 @@
+
+
+<div *ngIf="newUserList.length>0">
+  <mat-list>
+    <mat-list-item-title>Registro Usuarios:</mat-list-item-title>
+    <mat-list-item *ngFor="let user of newUserList;">{{user.correo}} registrado con exito</mat-list-item>
+  </mat-list>
+</div>
+<p class="mat-body-1" *ngIf="newUserList.length<=0">No hay usuarios agregados</p>
